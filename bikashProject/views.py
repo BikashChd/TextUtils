@@ -13,7 +13,8 @@ def navigation(request):
     return HttpResponse(s)
 
 
-
+def home(request):
+    return render(request,'index.html')
 
 def analyze(request):
     djText=request.POST.get('text','default')
